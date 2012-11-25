@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DAM sample</title>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="dam.js"></script>
+	<script type="text/javascript" charset="utf-8" src="dam-sample.js"></script>
+	<style>
+    	div.bundle { font-size:1.8em; margin-bottom:0.2em; }
+    	
+    	.status { margin-right:0.5em; border:1px solid black; width:1.2em; height:1.4em; 
+    	          font-size:0.6em; float:left; position:relative; top:5px; }
+        .notloaded { background-color:white; }
+        .added     { background-color:#CCCCCC; }
+        .loading   { background-color:#FFFF00; }
+        .loaded    { background-color:#00FF00; }
+        .error     { background-color:#FF0000; }
+        
+        .action { font-size:0.8em; border:1px solid black; float:right; padding: 0 0.5em; position:relative; top:2px; }
+        
+        .bundlename { float:left; }
+        
+        .progress { background-color:#AAAACC; height:0.3em; width:0%; margin-top:2px; clear:both; }
+        
+        #spinner {visibility:hidden; text-align:center;}
+	</style>
+</head>
+<body>
+<div id="bundles"></div>
+<h2 id="error-status" style="color:red"></h2>
+<div id="spinner"><img src="loading.gif" /></div>
+</body>
+</html>
