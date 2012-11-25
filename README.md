@@ -11,10 +11,10 @@ Notification callbacks can be registered (see section on events).   Callbacks ar
 
 This library requires Phonegap/Cordova 2.2.   The supported platforms should be:
 
-Android [TESTED]
-iOS
-BlackBerry WebWorks (OS 5.0 and higher)
-Windows Phone 7
+* Android [TESTED]
+* iOS
+* BlackBerry WebWorks (OS 5.0 and higher)
+* Windows Phone 7
 
 Usage example
 --------------
@@ -47,16 +47,16 @@ function damEvent(e) {
 
 Public API
 ----------
- DAM(baseDir) create DAM object with a given base directory
- DAM.init(callback) Initialize a DAM
- DAM.registerEventCallback(context, callback)
- DAM.addBundle(bundle)
- DAM.removeBundle(bundleName)
- DAM.getBundleNames() returns array of bundle names
- DAM.getBundle(bundleName) returns a bundle record
- DAM.bundleLoaded(bundleName) is this bundle loaded?
- DAM.bundleAdded(bundleName) is this bundle in this.bundles?
- DAM.localURL(remoteFile) get local URL of a file
+*  DAM(baseDir) create DAM object with a given base directory
+*  DAM.init(callback) Initialize a DAM
+*  DAM.registerEventCallback(context, callback)
+*  DAM.addBundle(bundle)
+*  DAM.removeBundle(bundleName)
+*  DAM.getBundleNames() returns array of bundle names
+*  DAM.getBundle(bundleName) returns a bundle record
+*  DAM.bundleLoaded(bundleName) is this bundle loaded?
+*  DAM.bundleAdded(bundleName) is this bundle in this.bundles?
+*  DAM.localURL(remoteFile) get local URL of a file
  
 Bundle format
 -------------
@@ -74,15 +74,15 @@ Events
 ------
 Bundle Events:
  
-  {event: DAM.BUNDLE_EVENT_LOADING, name:'bundleName'} when bundle starts loading
-  {event: DAM.BUNDLE_EVENT_PROGRESS, name:'bundleName', done:0.5} when bundle load progress happens
-  {event: DAM.BUNDLE_EVENT_LOADED, name:'bundleName'} when bundle finishes loading
-  {event: DAM.BUNDLE_EVENT_ERROR, name:'bundleName', error:'what happened'} when bundle cannot be loaded
+*   {event: DAM.BUNDLE_EVENT_LOADING, name:'bundleName'} when bundle starts loading
+*   {event: DAM.BUNDLE_EVENT_PROGRESS, name:'bundleName', done:0.5} when bundle load progress happens
+*   {event: DAM.BUNDLE_EVENT_LOADED, name:'bundleName'} when bundle finishes loading
+*   {event: DAM.BUNDLE_EVENT_ERROR, name:'bundleName', error:'what happened'} when bundle cannot be loaded
 
 Global events: 
 
-  {event: DAM.GLOBAL_EVENT_BUSY} a download or remove task is in progress
-  {event: DAM.GLOBAL_EVENT_NOTBUSY} no task in progress
+*   {event: DAM.GLOBAL_EVENT_BUSY} a download or remove task is in progress
+*   {event: DAM.GLOBAL_EVENT_NOTBUSY} no task in progress
 
 Sample application
 ------------------
@@ -90,8 +90,8 @@ To run the sample application, follow the instructions to create a phonegap/cord
 
 To Do
 -----
-Support for browsers that support the HTML5 FileWriter and XHR2 & APIs (e.g. Chrome)
-Support for bundle size queries.
-Provide easy way to ensure files are downloaded to a folder that will be automatically removed on app uninstall.
+* Support for browsers that support the HTML5 FileWriter and XHR2 & APIs (e.g. Chrome)
+* Support for bundle size queries.
+* Provide easy way to ensure files are downloaded to a folder that will be automatically removed on app uninstall.
 
  
